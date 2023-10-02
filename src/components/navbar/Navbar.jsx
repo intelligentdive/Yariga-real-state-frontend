@@ -1,10 +1,29 @@
+"use client";
 import Image from "next/image";
 import logo from "../../assets/logo.png";
 import { BiBell, BiMenuAltLeft, BiSearch } from "react-icons/bi";
 import profile from "../../assets/Profile.png";
 import ProfileToggleContent from "./ProfileToggleContent";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
+  const [profileContentShow, setProfileContentShow] = useState(false);
+  const divRef = useRef(null);
+
+  const handleOutsideClick = (e) => {
+    if (divRef.current && !divRef.current.contains(e.target)) {
+      setProfileContentShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      window.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
   return (
     <div className="bg-white px-[20px] py-[15px] ">
       <div className="lg:flex lg:items-center lg:gap-[50px]">
@@ -37,15 +56,19 @@ const Navbar = () => {
             />
           </div>
 
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 relative">
             {/* notification */}
             <div className="relative">
-              <BiBell className="text-text text-xl" />
+              <BiBell className="text-text text-xl cursor-pointer" />
               <span className="w-2 h-2 rounded-full bg-[#EB5757] absolute top-[2px] left-[11px]"></span>
             </div>
             {/* profile */}
             <div className="lg:flex lg:items-center lg:gap-[10px]">
-              <div className="cursor-pointer">
+              <div
+                className="cursor-pointer"
+                onClick={() => setProfileContentShow(!profileContentShow)}
+                ref={divRef}
+              >
                 <Image src={profile} alt="" width={40} />
               </div>
               <div className="w-[170px] h-[40px] hidden lg:block">
@@ -56,8 +79,8 @@ const Navbar = () => {
               </div>
             </div>
             {/* profile toggle content when user click the profile the it show */}
-            <div>
-              <ProfileToggleContent />
+            <div className="absolute top-full right-0 lg:right-6 mt-5 duration-300 z-50">
+              {profileContentShow && <ProfileToggleContent />}
             </div>
           </div>
         </div>
