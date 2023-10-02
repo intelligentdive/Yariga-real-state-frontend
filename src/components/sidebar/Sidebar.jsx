@@ -3,7 +3,7 @@ import SidebarMenuItems from "./SidebarMenuItems";
 
 const Sidebar = () => {
   return (
-    <div className="min-w-[250px] bg-white border-r border-[#f4f4f4] hidden lg:block pt-[25px]">
+    <div className="min-w-[250px] bg-white border-r h-screen border-[#f4f4f4] hidden lg:block py-[25px] px-[16px]">
       <SidebarMenuItems />
     </div>
   );

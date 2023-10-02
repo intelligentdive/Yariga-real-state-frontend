@@ -1,13 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
+
 import { BsBuildings, BsStar } from "react-icons/bs";
 import { LuUsers } from "react-icons/lu";
 import { BiMessageAltDetail, BiUserCircle } from "react-icons/bi";
 import { RxDashboard } from "react-icons/rx";
+import { usePathname } from "next/navigation";
 
 const SidebarMenuItems = () => {
+  const pathname = usePathname();
+
   const menuItems = [
     {
       id: 1,
@@ -53,7 +56,12 @@ const SidebarMenuItems = () => {
         <li key={item.id}>
           <Link
             href={item.link}
-            className="flex items-center gap-[10px] text-text text-base font-medium py-[16px] px-[23px]"
+            // className=""
+            className={
+              pathname === item?.link
+                ? "flex items-center gap-[10px] bg-main text-white rounded-lg text-base font-medium py-[16px] px-[23px]"
+                : "flex items-center gap-[10px] bg-none text-text text-base font-medium py-[16px] px-[23px]"
+            }
           >
             <span> {item.icons}</span> {item.text}
           </Link>

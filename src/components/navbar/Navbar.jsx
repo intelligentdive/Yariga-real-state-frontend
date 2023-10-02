@@ -55,7 +55,7 @@ const Navbar = () => {
                     : "-left-96 absolute top-full mt-6  duration-300"
                 }
               >
-                <div className="min-w-[250px] h-screen bg-white border-r border-[#f4f4f4]">
+                <div className="min-w-[250px] h-screen py-[20px] px-[15px] bg-white border-r border-[#f4f4f4]">
                   <SidebarMenuItems />
                 </div>
               </div>
