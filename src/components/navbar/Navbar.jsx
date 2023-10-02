@@ -5,9 +5,14 @@ import { BiBell, BiMenuAltLeft, BiSearch } from "react-icons/bi";
 import profile from "../../assets/Profile.png";
 import ProfileToggleContent from "./ProfileToggleContent";
 import { useEffect, useRef, useState } from "react";
+import Sidebar from "../sidebar/Sidebar";
+import SidebarMenuItems from "../sidebar/SidebarMenuItems";
 
 const Navbar = () => {
   const [profileContentShow, setProfileContentShow] = useState(false);
+  const [sidebarShow, setSidebarShow] = useState(false);
+
+  console.log(sidebarShow);
   const divRef = useRef(null);
 
   const handleOutsideClick = (e) => {
@@ -37,8 +42,18 @@ const Navbar = () => {
           {/* show for mobile device */}
           <div className="flex items-center gap-[20px] lg:hidden">
             {/* menubar */}
-            <div>
+            <div
+              className="relative"
+              onClick={() => setSidebarShow(!sidebarShow)}
+            >
               <BiMenuAltLeft className="text-heading text-2xl font-bold" />
+              <div className="absolute top-full mt-6 -left-5 duration-300">
+                {sidebarShow && (
+                  <div className="min-w-[250px] h-screen bg-white border-r border-[#f4f4f4]">
+                    <SidebarMenuItems />
+                  </div>
+                )}
+              </div>
             </div>
             {/* TODO:search bar toggle for mobile device  */}
             <div>
