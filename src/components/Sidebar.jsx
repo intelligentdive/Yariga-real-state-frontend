@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div className="min-w-[250px] bg-white border-r border-[#f4f4f4]">
+    <div className="min-w-[250px] bg-white border-r border-[#f4f4f4] hidden lg:block">
       <div className="flex flex-col gap-6 px-5 py-7">
         <Link href="/dashboard">Dashboard</Link>
         <Link href="/property">Property</Link>
