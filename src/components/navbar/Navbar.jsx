@@ -12,8 +12,8 @@ const Navbar = () => {
   const [profileContentShow, setProfileContentShow] = useState(false);
   const [sidebarShow, setSidebarShow] = useState(false);
 
-  console.log(sidebarShow);
   const divRef = useRef(null);
+  const sidebarRef = useRef(null);
 
   const handleOutsideClick = (e) => {
     if (divRef.current && !divRef.current.contains(e.target)) {
@@ -43,16 +43,21 @@ const Navbar = () => {
           <div className="flex items-center gap-[20px] lg:hidden">
             {/* menubar */}
             <div
-              className="relative"
+              className="relative cursor-pointer"
               onClick={() => setSidebarShow(!sidebarShow)}
+              ref={sidebarRef}
             >
               <BiMenuAltLeft className="text-heading text-2xl font-bold" />
-              <div className="absolute top-full mt-6 -left-5 duration-300">
-                {sidebarShow && (
-                  <div className="min-w-[250px] h-screen bg-white border-r border-[#f4f4f4]">
-                    <SidebarMenuItems />
-                  </div>
-                )}
+              <div
+                className={
+                  sidebarShow
+                    ? "-left-5 absolute top-full mt-6  duration-300"
+                    : "-left-96 absolute top-full mt-6  duration-300"
+                }
+              >
+                <div className="min-w-[250px] h-screen bg-white border-r border-[#f4f4f4]">
+                  <SidebarMenuItems />
+                </div>
               </div>
             </div>
             {/* TODO:search bar toggle for mobile device  */}
