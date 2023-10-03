@@ -30,12 +30,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="bg-white px-[20px] py-[15px] ">
+    <div className="bg-white dark:bg-darkWhite px-[20px] py-[15px] ">
       <div className="lg:flex lg:items-center lg:gap-[50px]">
         {/* logo hidden in mobile device*/}
         <div className="hidden lg:flex items-center gap-3 w-[250px]">
           <Image src={logo} alt="logo" width={35} />
-          <h2 className="text-[25px] font-bold text-heading">Yariga</h2>
+          <h2 className="text-[25px] font-bold text-heading dark:text-darkHeading">
+            Yariga
+          </h2>
         </div>
 
         <div className="flex justify-between items-center w-full">
@@ -47,7 +49,7 @@ const Navbar = () => {
               onClick={() => setSidebarShow(!sidebarShow)}
               ref={sidebarRef}
             >
-              <BiMenuAltLeft className="text-heading text-2xl font-bold" />
+              <BiMenuAltLeft className="text-heading dark:text-darkHeading text-2xl font-bold" />
               <div
                 className={
                   sidebarShow
@@ -55,7 +57,7 @@ const Navbar = () => {
                     : "-left-96 absolute top-full mt-6  duration-300"
                 }
               >
-                <div className="min-w-[250px] h-screen py-[20px] px-[15px] bg-white border-r border-[#f4f4f4]">
+                <div className="min-w-[250px] h-screen py-[20px] px-[15px] bg-white dark:bg-darkWhite border-r border-[#f4f4f4] dark:border-darkBg">
                   <SidebarMenuItems />
                 </div>
               </div>
@@ -67,12 +69,12 @@ const Navbar = () => {
           </div>
 
           {/* search field  hidden in mobile device*/}
-          <div className="hidden lg:flex items-center gap-2 w-[405px] p-[10px] rounded-lg bg-[#f4f4f4]">
+          <div className="hidden lg:flex items-center gap-2 w-[405px] p-[10px] rounded-lg dark:bg-darkBg bg-[#f4f4f4]">
             <BiSearch className="text-text" />
             <input
               type="text"
               placeholder="Search property, Customer etc"
-              className="bg-none w-full outline-none"
+              className="bg-none w-full outline-none dark:text-text"
             />
           </div>
 
@@ -92,7 +94,7 @@ const Navbar = () => {
                 <Image src={profile} alt="" width={40} />
               </div>
               <div className="w-[170px] h-[40px] hidden lg:block">
-                <h2 className="text-heading text-sm font-semibold">
+                <h2 className="text-heading dark:text-darkHeading text-sm font-semibold">
                   Hawkins Maru
                 </h2>
                 <p className="text-text text-sm font-normal">Company Manager</p>

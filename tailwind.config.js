@@ -6,13 +6,20 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      heading: "#11142D",
-      main: "#475BE8",
-      white: "#fcfcfc",
-      text: "#808191",
-      none: "transparent",
+    extend: {
+      colors: {
+        lightBg: "#f4f4f4",
+        heading: "#11142D",
+        main: "#475BE8",
+        white: "#fcfcfc",
+        text: "#808191",
+        none: "transparent",
+        darkBg: "#111315",
+        darkWhite: "#1A1D1F",
+        darkHeading: "#EFEFEF",
+      },
     },
   },
   plugins: [],
+  darkMode: "class",
 };

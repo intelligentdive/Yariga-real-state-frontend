@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Sidebar from "@/components/sidebar/Sidebar";
+import ThemeToggleProvider from "@/lib/ThemeToggleProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,8 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main>{children}</main>
+      <body className="bg-lightBg dark:bg-darkBg">
+        <ThemeToggleProvider>
+          <main>{children}</main>
+        </ThemeToggleProvider>
       </body>
     </html>
   );
