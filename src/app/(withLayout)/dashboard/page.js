@@ -1,6 +1,7 @@
 import BarChart from "@/components/dashboard/BarChart";
 import Charts from "@/components/dashboard/BarChart";
 import TotalRevenue from "@/components/dashboard/TotalRevenue";
+import VerticalPercentage from "@/components/dashboard/VerticalPercentage";
 import { BiUpArrowAlt } from "react-icons/bi";
 
 const DashboardPage = () => {
@@ -38,7 +39,24 @@ const DashboardPage = () => {
             <BarChart />
           </div>
         </div>
-        <div className="md:col-span-4 "></div>
+        <div className="md:col-span-4 bg-white dark:bg-darkWhite p-5 rounded-xl">
+          <h2 className="text-[18px] font-semibold text-heading dark:text-darkHeading">
+            Property Referrals
+          </h2>
+          <VerticalPercentage
+            progress={66}
+            text={"Social Media"}
+            bg="#6C5DD3"
+          />
+          <VerticalPercentage
+            progress={40}
+            text={"Marketplaces"}
+            bg="#7FBA7A"
+          />
+          <VerticalPercentage progress={50} text={"Websites"} bg="#FFCE73" />
+          <VerticalPercentage progress={80} text={"Digital ads"} bg="#FFA2C0" />
+          <VerticalPercentage progress={15} text={"Others"} bg="#F45252" />
+        </div>
       </div>
     </>
   );
