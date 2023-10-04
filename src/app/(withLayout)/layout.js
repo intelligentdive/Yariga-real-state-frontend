@@ -9,7 +9,7 @@ const DashboardLayout = ({ children }) => {
         <Navbar />
         <div className="flex">
           <Sidebar />
-          <div className="w-screen py-[28px] px-[25px]">{children}</div>
+          <div className="w-screen  py-[28px] px-[25px] ">{children}</div>
         </div>
       </ThemeToggleProvider>
     </>
