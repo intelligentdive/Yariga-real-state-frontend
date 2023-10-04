@@ -1,16 +1,94 @@
 {
-  "data": [
+  "property": [
     {
-      "name": "Noyon Podder",
-      "role": "Admin"
+      "id": 1,
+      "image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "star sun hotel & apartment",
+      "price": 500,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
     },
     {
-      "name": "Jalil Mia",
-      "role": "user"
+      "id": 2,
+      "image": "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Metro Jayakarta Hotel & Spa",
+      "price": 220,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
     },
     {
-      "name": "Rahim Vai",
-      "role": "Admin"
+      "id": 3,
+      "image": "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Lotus Apy Hotel & Apartment",
+      "price": 220,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
+    },
+    {
+      "id": 4,
+      "image": "https://cdn.pixabay.com/photo/2016/08/05/17/32/new-1572747_640.jpg",
+      "name": "Lotus Apy Hotel & Apartment",
+      "price": 220,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
+    },
+    {
+      "id": 5,
+      "image": "https://cdn.pixabay.com/photo/2018/08/14/05/17/manor-3604684_640.jpg",
+      "name": "Lotus Apy Hotel & Apartment",
+      "price": 220,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
+    },
+    {
+      "id": 6,
+      "image": "https://cdn.pixabay.com/photo/2017/06/16/15/58/luxury-home-2409518_640.jpg",
+      "name": "Lotus Apy Hotel & Apartment",
+      "price": 220,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
+    },
+    {
+      "id": 7,
+      "image": "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Lotus Apy Hotel & Apartment",
+      "price": 220,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
+    },
+    {
+      "id": 8,
+      "image": "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Lotus Apy Hotel & Apartment",
+      "price": 220,
+      "location": "North carolina, USA",
+      "beds": "4beds",
+      "size": "28M"
+    },
+    {
+      "id": 9,
+      "image": "https://images.pexels.com/photos/6039193/pexels-photo-6039193.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Almander Hotel & Apartment ",
+      "price": 220,
+      "location": "Middlesex, USA",
+      "beds": "4beds",
+      "size": "28M"
+    },
+    {
+      "id": 10,
+      "image": "https://images.pexels.com/photos/7078872/pexels-photo-7078872.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Metro Jayakarta Hotel & Spa",
+      "price": 220,
+      "location": "California, USA",
+      "beds": "4beds",
+      "size": "28M"
     }
   ]
 }
