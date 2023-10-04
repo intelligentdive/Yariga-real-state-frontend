@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chart.js": "^4.4.0",
     "next": "latest",
     "next-themes": "^0.2.1",
     "react": "latest",
+    "react-chartjs-2": "^5.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "latest",
     "react-icons": "^4.11.0"
