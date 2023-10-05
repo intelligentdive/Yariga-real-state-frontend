@@ -1,6 +1,9 @@
 import BarChart from "@/components/dashboard/BarChart";
 import Charts from "@/components/dashboard/BarChart";
+import CustomerGraph from "@/components/dashboard/CustomerGraph";
+import LatestSales from "@/components/dashboard/LatestSales";
 import PropertyTab from "@/components/dashboard/PropertyTab";
+import TopAgent from "@/components/dashboard/TopAgent";
 import TotalRevenue from "@/components/dashboard/TotalRevenue";
 import VerticalPercentage from "@/components/dashboard/VerticalPercentage";
 import { BiUpArrowAlt } from "react-icons/bi";
@@ -58,6 +61,21 @@ const DashboardPage = () => {
           <VerticalPercentage progress={50} text={"Websites"} bg="#FFCE73" />
           <VerticalPercentage progress={80} text={"Digital ads"} bg="#FFA2C0" />
           <VerticalPercentage progress={15} text={"Others"} bg="#F45252" />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-5 mt-5">
+        {/* top agent */}
+        <div className="md:col-span-4 bg-white dark:bg-darkWhite p-5 rounded-xl">
+          <TopAgent />
+        </div>
+        {/* customer graph*/}
+        <div className="md:col-span-3 bg-white dark:bg-darkWhite p-5 rounded-xl">
+          <CustomerGraph />
+        </div>
+        {/* latest sales */}
+        <div className="md:col-span-5 bg-white dark:bg-darkWhite p-5 rounded-xl">
+          <LatestSales />
         </div>
       </div>
 
