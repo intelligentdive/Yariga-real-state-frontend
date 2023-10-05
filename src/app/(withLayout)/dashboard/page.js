@@ -1,5 +1,6 @@
 import BarChart from "@/components/dashboard/BarChart";
 import Charts from "@/components/dashboard/BarChart";
+import CustomerChart from "@/components/dashboard/CustomerChart";
 import CustomerGraph from "@/components/dashboard/CustomerGraph";
 import LatestSales from "@/components/dashboard/LatestSales";
 import PropertyTab from "@/components/dashboard/PropertyTab";
@@ -16,6 +17,7 @@ const DashboardPage = () => {
         Dashboard
       </h1>
       <TotalRevenue />
+
       {/* chart and progress bar */}
       <div className="grid grid-cols-1 md:grid-cols-11 gap-5 mt-5">
         <div className="md:col-span-7 bg-white dark:bg-darkWhite p-5 rounded-xl">
