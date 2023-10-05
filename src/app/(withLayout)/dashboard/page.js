@@ -1,5 +1,6 @@
 import BarChart from "@/components/dashboard/BarChart";
 import Charts from "@/components/dashboard/BarChart";
+import PropertyTab from "@/components/dashboard/PropertyTab";
 import TotalRevenue from "@/components/dashboard/TotalRevenue";
 import VerticalPercentage from "@/components/dashboard/VerticalPercentage";
 import { BiUpArrowAlt } from "react-icons/bi";
@@ -12,6 +13,7 @@ const DashboardPage = () => {
         Dashboard
       </h1>
       <TotalRevenue />
+      {/* chart and progress bar */}
       <div className="grid grid-cols-1 md:grid-cols-11 gap-5 mt-5">
         <div className="md:col-span-7 bg-white dark:bg-darkWhite p-5 rounded-xl">
           <div>
@@ -56,6 +58,18 @@ const DashboardPage = () => {
           <VerticalPercentage progress={50} text={"Websites"} bg="#FFCE73" />
           <VerticalPercentage progress={80} text={"Digital ads"} bg="#FFA2C0" />
           <VerticalPercentage progress={15} text={"Others"} bg="#F45252" />
+        </div>
+      </div>
+
+      {/* property card */}
+      <div className="mt-[24px] mb-[20px] bg-white dark:bg-darkWhite p-[20px] rounded-[15px]">
+        <div className="flex items-center justify-between flex-wrap gap-[20px]">
+          <h2 className="text-heading dark:text-darkHeading text-lg font-semibold">
+            Property List
+          </h2>
+          <>
+            <PropertyTab />
+          </>
         </div>
       </div>
     </>
