@@ -8,9 +8,14 @@ import TopAgent from "@/components/dashboard/TopAgent";
 import TotalRevenue from "@/components/dashboard/TotalRevenue";
 import VerticalPercentage from "@/components/dashboard/VerticalPercentage";
 import { BiUpArrowAlt } from "react-icons/bi";
+import Card from "../../../components/dashboard/Card";
 
-const DashboardPage = () => {
-  const percentage = 66;
+const DashboardPage = async () => {
+  const res = await fetch("http://localhost:5000/property");
+  const data = await res.json();
+
+  const property = data.slice(0, 3);
+
   return (
     <>
       <h1 className="text-heading dark:text-darkHeading text-[25px] font-bold">
@@ -90,6 +95,11 @@ const DashboardPage = () => {
           <>
             <PropertyTab />
           </>
+        </div>
+        <div className="pt-[15px] pb-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+          {property?.map((item) => (
+            <Card key={item.id} property={item} />
+          ))}
         </div>
       </div>
     </>
