@@ -21,6 +21,7 @@ const DashboardPage = async () => {
       <h1 className="text-heading dark:text-darkHeading text-[25px] font-bold">
         Dashboard
       </h1>
+      {/* revenue component */}
       <TotalRevenue />
 
       {/* chart and progress bar */}
