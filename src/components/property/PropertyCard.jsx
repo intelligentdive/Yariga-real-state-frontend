@@ -8,7 +8,7 @@ const PropertyCard = ({ property }) => {
   return (
     <div className="flex w-full overflow-hidden bg-white rounded-lg  dark:bg-darkWhite">
       <div
-        className="w-1/2 bg-cover"
+        className="w-1/2 bg-cover rounded-lg"
         style={{
           backgroundImage: `url(${image})`,
         }}

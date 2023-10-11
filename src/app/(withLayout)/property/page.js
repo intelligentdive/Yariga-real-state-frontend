@@ -1,3 +1,4 @@
+import Pagination from "@/components/property/Pagination";
 import PropertyCard from "@/components/property/PropertyCard";
 import PropertyFilter from "@/components/property/PropertyFilter";
 import React from "react";
@@ -26,6 +27,15 @@ const PropertyPage = async () => {
           {properties?.map((item) => (
             <PropertyCard key={item.id} property={item} />
           ))}
+        </div>
+        {/* pagination */}
+        <div className="flex items-center justify-between mt-[25px]">
+          <p className="text-text dark:text-darkText text-sm font-normal ">
+            Showing 1 to 10 Properties
+          </p>
+          <div>
+            <Pagination />
+          </div>
         </div>
       </div>
     </div>
