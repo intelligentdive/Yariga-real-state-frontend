@@ -27,7 +27,7 @@ const PropertyDetails = () => {
       </h2>
 
       {/* details body */}
-      <div className="mt-[25px] grid grid-cols-1 lg:grid-cols-10 gap-[21px]">
+      <div className="mt-[25px] grid grid-cols-1 lg:grid-cols-11 gap-[21px]">
         <div className=" lg:col-span-7 ">
           {/* image grid */}
           <div className="grid grid-cols-10 gap-5">
@@ -135,7 +135,7 @@ const PropertyDetails = () => {
             </div>
           </div>
         </div>
-        <div className=" lg:col-span-3">
+        <div className=" lg:col-span-4">
           <div className="border border-lightBg dark:border-darkBg rounded-[4px] pt-[15px] px-[25px] pb-[20px]">
             {/* 3 dots  */}
             <div className="flex justify-end">
@@ -173,6 +173,21 @@ const PropertyDetails = () => {
                 <BsFillTelephoneFill className="text-xl" /> Call
               </button>
             </div>
+          </div>
+
+          {/* use google map */}
+          <div className="mt-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.726195304295!2d89.13643127421226!3d23.89932598304477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe974936710dbf%3A0x39842dacedb77048!2sHoribasor%20Mor!5e0!3m2!1sen!2sbd!4v1697089865012!5m2!1sen!2sbd"
+              className="w-full h-[306px] rounded-lg"
+              // style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <button className="w-full bg-main text-white rounded-lg text-lg font-semibold py-[11px] mt-5 ">
+              Book Now
+            </button>
           </div>
         </div>
       </div>
