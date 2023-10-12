@@ -92,42 +92,42 @@
     }
   ],
 
-  "all-agent":[
-      {
-        "id": 1,
-        "image": "https://i.ibb.co/G29kt7F/Karen-Eilla.png",
-        "name": "Karen Eilla Boyette",
-        "email": "kareneboyette@armyspy.com",
-        "phone": "+502-324-4194",
-        "location": "Manchester",
-        "property_number": 15
-      },
-      {
-        "id": 2,
-        "image": "https://i.ibb.co/whYM6MD/walter-devid.png",
-        "name": "Walter David Moye",
-        "email": "walterDavid@armyspy.com",
-        "phone": "+425-324-3569",
-        "location": "Chicago Canada",
-        "property_number": 10
-      },
-      {
-        "id": 3,
-        "image": "https://i.ibb.co/rZz2DZ2/david-smith.png",
-        "name": "David Smith Reddy",
-        "email": "davidSmith@gmail.com",
-        "phone": "+635-128-6751",
-        "location": "Manchester",
-        "property_number": 18
-      },
-      {
-        "id": 4,
-        "image": "https://i.ibb.co/vDvLxWX/john-haron.png",
-        "name": "John Haron Reddy",
-        "email": "johnHaron@gmail.com",
-        "phone": "+156-128-3671",
-        "location": "Melbourn Australia",
-        "property_number": 8
-      }
+  "all-agent": [
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/G29kt7F/Karen-Eilla.png",
+      "name": "Karen Eilla Boyette",
+      "email": "karenee@armyspy.com",
+      "phone": "+502-324-4194",
+      "location": "Manchester",
+      "property_number": 15
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/whYM6MD/walter-devid.png",
+      "name": "Walter David Moye",
+      "email": "walterDavid@armyspy.com",
+      "phone": "+425-324-3569",
+      "location": "Chicago Canada",
+      "property_number": 10
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/rZz2DZ2/david-smith.png",
+      "name": "David Smith Reddy",
+      "email": "davidSmith@gmail.com",
+      "phone": "+635-128-6751",
+      "location": "Manchester",
+      "property_number": 18
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/vDvLxWX/john-haron.png",
+      "name": "John Haron Reddy",
+      "email": "johnHaron@gmail.com",
+      "phone": "+156-128-3671",
+      "location": "Melbourn Australia",
+      "property_number": 8
+    }
   ]
 }
