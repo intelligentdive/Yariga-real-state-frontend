@@ -4,7 +4,7 @@ import { useState } from "react";
 import { BiChevronDown } from "react-icons/bi";
 
 const ReviewTab = () => {
-  const [activeTab, setActiveTab] = useState("tab2");
+  const [activeTab, setActiveTab] = useState("tab1");
   return (
     <div className="md:px-[25px] pl-[9px] md:pl-0 bg-white dark:bg-darkWhite rounded-[15px] inline-block w-full md:w-max">
       <ul className="flex items-center flex-wrap gap-3   ">
