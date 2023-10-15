@@ -5,8 +5,17 @@ import profile from "../../../assets/allAgent/david-smith.png";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { MdLocationOn } from "react-icons/md";
 import { BsFillEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
+import PropertyTab from "@/components/dashboard/PropertyTab";
+import Card from "@/components/dashboard/Card";
+import ProfileToggleContent from "@/components/navbar/ProfileToggleContent";
 
-const ProfilePage = () => {
+import ToggleContent from "@/components/profile/ToggleContent";
+
+const ProfilePage = async () => {
+  const res = await fetch("http://localhost:5000/property");
+  const data = await res.json();
+  const property = data?.slice(0, 3);
+
   return (
     <div>
       <h2 className="text-lg font-semibold md:text-[26px] md:font-bold text-heading dark:text-darkHeading md:px-[0px] px-[10px]">
@@ -57,10 +66,12 @@ const ProfilePage = () => {
                   Admin
                 </p>
               </div>
-              <BiDotsHorizontalRounded className="text-heading dark:text-darkHeading text-xl" />
+              <div>
+                <ToggleContent />
+              </div>
             </div>
 
-            <div className="lg:w-[544px] w-full mt-[30px]">
+            <div className="lg:w-full xl:max-w-[544px] w-full mt-[30px]">
               <div className="">
                 <p className="text-text dark:text-darkText text-xs font-normal mb-1">
                   Address
@@ -97,6 +108,23 @@ const ProfilePage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* property card */}
+      <div className="mt-[24px] mb-[20px] bg-white dark:bg-darkWhite p-[20px] rounded-[15px]">
+        <div className="flex items-center justify-between flex-wrap gap-[20px]">
+          <h2 className="text-heading dark:text-darkHeading text-lg font-semibold">
+            Property List
+          </h2>
+          <>
+            <PropertyTab />
+          </>
+        </div>
+        <div className="pt-[15px] pb-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+          {property?.map((item) => (
+            <Card key={item.id} property={item} />
+          ))}
         </div>
       </div>
     </div>

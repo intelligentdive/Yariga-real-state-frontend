@@ -14,7 +14,7 @@ const DashboardPage = async () => {
   const res = await fetch("http://localhost:5000/property");
   const data = await res.json();
 
-  const property = data.slice(0, 3);
+  const property = data?.slice(0, 3);
 
   return (
     <>
