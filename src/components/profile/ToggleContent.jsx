@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import ProfileToggle from "./profileToggle";
 
 const ToggleContent = () => {
-  const [profileContentShow, setProfileContentShow] = useState(true);
+  const [profileContentShow, setProfileContentShow] = useState(false);
   const divRef = useRef(null);
 
   const handleOutsideClick = (e) => {

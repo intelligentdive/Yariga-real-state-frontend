@@ -2,12 +2,11 @@ import Image from "next/image";
 import profileCover from "../../../assets/profile-cover.png";
 import { AiFillCamera } from "react-icons/ai";
 import profile from "../../../assets/allAgent/david-smith.png";
-import { BiDotsHorizontalRounded } from "react-icons/bi";
+
 import { MdLocationOn } from "react-icons/md";
 import { BsFillEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
 import PropertyTab from "@/components/dashboard/PropertyTab";
 import Card from "@/components/dashboard/Card";
-import ProfileToggleContent from "@/components/navbar/ProfileToggleContent";
 
 import ToggleContent from "@/components/profile/ToggleContent";
 
