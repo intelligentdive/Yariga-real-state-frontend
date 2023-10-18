@@ -5,10 +5,10 @@ import { CiLocationOn } from "react-icons/ci";
 
 const PropertyCard = ({ property }) => {
   const { id, image, name, price, location, beds, size } = property;
-  console.log(price, name);
+
   return (
     <Link href={`/property/${id}`}>
-      <div className="flex w-full overflow-hidden bg-white rounded-lg  dark:bg-darkWhite">
+      <div className="flex w-full overflow-hidden bg-white rounded-lg  dark:bg-darkWhite  duration-300  hover:shadow-xl ">
         <div
           className="w-1/2 bg-cover rounded-lg"
           style={{
@@ -16,7 +16,7 @@ const PropertyCard = ({ property }) => {
           }}
         ></div>
 
-        <div className="w-2/3 px-[10px]">
+        <div className="w-2/3 px-[10px] py-2">
           <p className="bg-[#DADEFA] px-[10px] py-[7px] rounded-[5px] text-main text-xs font-semibold inline-block">
             ${price}
           </p>

@@ -3,6 +3,8 @@ import Image from "next/image";
 import AgentProfile from "@/components/agent/AgentProfile";
 import AgentInputInformation from "@/components/agent/AgentInputInformation";
 import AgentDetailsContent from "@/components/agent/AgentDetailsContent";
+import Link from "next/link";
+import AgentPropertyContent from "@/components/agent/AgentPropertyContent";
 
 const AgentDetailsPage = () => {
   return (
@@ -25,6 +27,11 @@ const AgentDetailsPage = () => {
           {/* Agent details */}
           <AgentDetailsContent />
         </div>
+      </div>
+
+      {/* property content */}
+      <div className="bg-white dark:bg-darkWhite py-[25px] px-[30px] rounded-[15px] mt-5">
+        <AgentPropertyContent />
       </div>
     </div>
   );
