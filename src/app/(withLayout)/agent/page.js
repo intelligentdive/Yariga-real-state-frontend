@@ -1,4 +1,5 @@
 import AllAgent from "@/components/agent/AllAgent";
+import Link from "next/link";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const AgentPage = async () => {
@@ -10,9 +11,11 @@ const AgentPage = async () => {
         <h1 className="text-heading dark:text-darkHeading md:text-[25px] text-[18px] font-bold">
           Agent List
         </h1>
-        <button className="flex items-center gap-[5px] py-[13px] px-5 bg-main  duration-300 hover:bg-indigo-700 text-white rounded-[10px] text-sm font-medium">
-          <AiOutlinePlus className="text-white" /> Add Agent
-        </button>
+        <Link href="/agent/add-agent">
+          <button className="flex items-center gap-[5px] py-[13px] px-5 bg-main  duration-300 hover:bg-indigo-700 text-white rounded-[10px] text-sm font-medium">
+            <AiOutlinePlus className="text-white" /> Add Agent
+          </button>
+        </Link>
       </div>
 
       <div className="mt-[20px]">
