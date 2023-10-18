@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import AgentProfile from "@/components/agent/AgentProfile";
 import AgentInputInformation from "@/components/agent/AgentInputInformation";
+import AgentDetailsContent from "@/components/agent/AgentDetailsContent";
 
 const AgentDetailsPage = () => {
   return (
@@ -12,7 +13,7 @@ const AgentDetailsPage = () => {
 
       {/* main content */}
       <div className="grid grid-cols-1 md:grid-cols-8 gap-[30px] mt-5 px-[20px] md:px-0">
-        <div className="md:col-span-3 bg-white dark:bg-darkWhite">
+        <div className="md:col-span-3 bg-white dark:bg-darkWhite rounded-[15px]">
           <>
             <AgentProfile />
           </>
@@ -20,7 +21,10 @@ const AgentDetailsPage = () => {
             <AgentInputInformation />
           </>
         </div>
-        <div className="md:col-span-5 ">amipari na</div>
+        <div className="md:col-span-5 ">
+          {/* Agent details */}
+          <AgentDetailsContent />
+        </div>
       </div>
     </div>
   );

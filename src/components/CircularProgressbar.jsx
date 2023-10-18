@@ -3,12 +3,12 @@
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const CircularProgressBar = ({ value, pathColor }) => {
+const CircularProgressBar = ({ value, pathColor, strokeWidth }) => {
   return (
     <div className="w-[60px] h-[60px]">
       <CircularProgressbar
         value={value}
-        strokeWidth={20}
+        strokeWidth={strokeWidth}
         styles={buildStyles({
           pathColor: `${pathColor}`,
 

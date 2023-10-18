@@ -15,7 +15,11 @@ const TotalRevenue = () => {
             </h1>
           </div>
           <div className=" ">
-            <CircularProgressBar value={76} pathColor={`#475BE8`} />
+            <CircularProgressBar
+              strokeWidth={20}
+              value={76}
+              pathColor={`#475BE8`}
+            />
           </div>
         </div>
       </div>
@@ -32,7 +36,11 @@ const TotalRevenue = () => {
             </h1>
           </div>
           <div>
-            <CircularProgressBar value={56} pathColor={`#FD8539`} />
+            <CircularProgressBar
+              strokeWidth={20}
+              value={56}
+              pathColor={`#FD8539`}
+            />
           </div>
         </div>
       </div>
@@ -47,7 +55,11 @@ const TotalRevenue = () => {
             </h1>
           </div>
           <div>
-            <CircularProgressBar value={36} pathColor={`#2ED480`} />
+            <CircularProgressBar
+              strokeWidth={20}
+              value={36}
+              pathColor={`#2ED480`}
+            />
           </div>
         </div>
       </div>
@@ -62,7 +74,11 @@ const TotalRevenue = () => {
             </h1>
           </div>
           <div>
-            <CircularProgressBar value={76} pathColor={`#FE6D8E`} />
+            <CircularProgressBar
+              strokeWidth={20}
+              value={76}
+              pathColor={`#FE6D8E`}
+            />
           </div>
         </div>
       </div>
