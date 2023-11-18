@@ -1,6 +1,5 @@
 import AddAgentDetails from "@/components/agent/AddAgentDetails";
 import AddAgentProfile from "@/components/agent/AddAgentProfile";
-import Image from "next/image";
 
 const AddAgentPage = () => {
   return (
