@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1, 
+        "task": "Learn Next.js",
+        "completed": "by 9th February",
+        "requirement": "React and javascript" 
+    },
+    {
+        "id": 2, 
+        "task": "Learn Redux Toolkit",
+        "completed": "by 11th February",
+        "requirement": "React and Basic Redux" 
+    },
+    {
+        "id": 3, 
+        "task": "Learn Mongoose",
+        "completed": "by 31th February",
+        "requirement": "MongoDB and Node.js" 
+    }
+]
